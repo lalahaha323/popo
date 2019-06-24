@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/simpleLightbox.css" rel='stylesheet' type='text/css' />
+	<link href="http://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Lato:100i,300,300i,400,400i,700,700i,900" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700" rel="stylesheet">
+</head>
+
+<body>
+	<!--/banner-->
+	<header>
+		<div class="top-bar_sub container-fluid">
+			<div class="row">
+                <div class="col-md-4 top-forms text-left mt-4"  data-aos="fade-up">
+					<span>欢迎回来</span>
+					<span class="mx-lg-4 mx-md-2  mx-1">
+						<a href="login.html">
+							<i class="fas fa-lock"></i>登录</a>
+					</span>
+                    <span id="user">欢迎用户登录</span>
+                 </div>   
+				<div class="col-md-4 logo text-center" data-aos="fade-up">
+					<a class="navbar-brand" href="index.html">
+						<i class="fab fa-gitkraken"></i> 小恐龙甜品店</a>
+				</div>
+				<div class="col-md-4 log-icons text-right"  data-aos="fade-up">
+
+					<ul class="social_list1 mt-4">
+
+						<li>
+							<a href="chart.html" class="facebook1 mx-2">
+								<i class="fa fa-shopping-cart"></i>
+                                
+							</a>
+						</li>
+						<li>
+							<a href="#" class="twitter2">
+								<i class="far fa-star"></i>
+                                     
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="banner">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="carousel-caption">
+						<h3>用“心”制作
+							<span>每一份甜蜜</span>
+						</h3>
+
+					</div>
+				</div>
+				<div class="carousel-item item2">
+					<div class="carousel-caption">
+						<h3>分分出炉
+							<span>秒秒新鲜</span>
+						</h3>
+
+					</div>
+				</div>
+				<div class="carousel-item item3">
+					<div class="carousel-caption">
+						<h3>无尽奢华
+							<span>时光挚爱</span>
+						</h3>
+
+					</div>
+				</div>
+				<div class="carousel-item item4">
+					<div class="carousel-caption">
+						<h3>最懂你
+							<span>好滋味</span>
+						</h3>
+
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--/nav-->
+	<div class="header_top" id="home">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">首页
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">积分活动</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll" href="#menu">菜单</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">小恐龙日志</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						    aria-expanded="false">
+							店内特色
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#"></a>
+							<a class="dropdown-item" href="gallery.html">饮品</a>
+							<div class="dropdown-divider"></div>
+<!--							<a class="dropdown-item" href="tianpin.html">甜点</a>-->
+							<button type="button" class="dropdown-item" onclick = "showBread()">甜品</button>
+							<a class="dropdown-item" href="tiandian.html">甜点</a>
+
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">我是会员</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+	<!--//nav-->
+	<!--/inner-content-->
+	<!--/banner-bottom-->
+	<section class="banner-bottom">
+		<div class="container">
+			<h3 class="tittle">小恐龙成长历史</h3>
+			<div class="row inner-sec">
+				<div class="col-lg-6 about-img" data-aos="flip-right">
+					<img src="images/ab.jpg" class="img-fluid" alt="">
+				</div>
+				<div class="col-lg-6 about-info text-left" data-aos="flip-left" >
+					<h4 class="sub-hd mb-4">我们要做最好的 </h4>
+					<p>小恐龙甜品店刚开始从甜品起步，店内主要销售蛋糕、西式甜点、饼干等，后来受西方国家影响，引入了多种饮品，可以和喜欢的人约下午茶，渐渐地成为人们生活中必不可少的东西。</p>
+					<p class="sup-para mt-2">靠薄利多销,走经营流水,凭品质和设计,赚客户认可度,这就是我们的经营之道。相信依靠公司同仁的努力,我们的产品会赢得良好的信誉,在获得丰厚利润的同时,也为顾客带来更多新颖美味健康的甜品，让顾客都能在甜品中得到快乐。实现公司与客户的双赢！</p>
+					<div class="view my-4">
+						<a href="single.html" class="btn btn-primary read-m">查看</a>
+					</div>
+
+					<img src="images/banner3.jpg" class="img-fluid" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//banner-bottom-->
+	
+	<!--/banner-bottom-->
+	<section class="grid-info-section">
+		<div class="container">
+			<h3 class="tittle">热销排名</h3>
+			<div class="row inner-sec">
+				<ul id="flexiselDemo1">
+<!--					<li>-->
+<!--						<div class="blog-item text-center">-->
+<!--							<img src="images/1.jpg" alt=" " class="img-fluid rounded-circle"/>-->
+<!--							<div class="floods-text">-->
+<!--								<h3>Num 1</h3>-->
+
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<div class="blog-item text-center">-->
+<!--							<img src="images/2.jpg" alt=" " class="img-fluid rounded-circle" />-->
+<!--							<div class="floods-text">-->
+<!--								<h3>Num 2</h3>-->
+
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<div class="blog-item text-center">-->
+<!--							<img src="images/3.jpg" alt=" " class="img-fluid rounded-circle" />-->
+<!--							<div class="floods-text">-->
+<!--								<h3>Num 3</h3>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<div class="blog-item text-center">-->
+<!--							<img src="images/4.jpg" alt=" " class="img-fluid rounded-circle" />-->
+<!--							<div class="floods-text">-->
+<!--								<h3>Num 4</h3>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<div class="blog-item text-center">-->
+<!--							<img src="images/5.jpg" alt=" " class="img-fluid rounded-circle" />-->
+<!--							<div class="floods-text">-->
+<!--								<h3>Num 5</h3>-->
+
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!--//banner-bottom-->
+	<div class="tlinks"></div>
+	<!--/Menu-->
+	<section class="banner-bottom menu" id="menu">
+		<div class="container">
+			<h3 class="tittle">每日推荐</h3>
+			<div class="row inner-sec">
+				<div class="tabs">
+					<ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+							    aria-selected="true">火爆热销</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+							    aria-selected="false">新品上市</a>
+						</li>
+
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="menu-grids my-lg-4 my-md-2">
+								<div class="row inner-menu mt-4">
+									<div class="col-md-6 menu-grid-left" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/1.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>纯巧克力蛋糕</h5>
+												<p class="sub-meta mt-2">
+
+													￥15元
+												</p>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-md-6 menu-grid-right" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/2.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>红豆软曲奇</h5>
+												<p class="sub-meta mt-2">
+
+											         ￥6元
+												</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="row inner-menu mt-4">
+									<div class="col-md-6 menu-grid-left" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/3.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>黑白混合巧克力蛋糕</h5>
+												<p class="sub-meta mt-2">
+
+													￥20元
+												</p>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-md-6 menu-grid-right" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/4.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>冰淇淋蛋糕</h5>
+												<p class="sub-meta mt-2">
+													￥35元
+												</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<div class="menu-grids my-lg-4 my-md-2">
+									<div class="row inner-menu mt-4">
+									<div class="col-md-6 menu-grid-left" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/f1.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>抹茶牛奶饼干</h5>
+												<p class="sub-meta mt-2">
+
+													￥10元
+												</p>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-md-6 menu-grid-right" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/c2.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>马卡龙</h5>
+												<p class="sub-meta mt-2">
+
+													￥18元
+												</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="row inner-menu mt-4">
+									<div class="col-md-6 menu-grid-left" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/c3.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>奶油夹心蛋糕</h5>
+												<p class="sub-meta mt-2">
+                                                										
+                                          	       ￥9元
+  												</p>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-md-6 menu-grid-right" data-aos="fade-down">
+										<div class="row mt-2">
+											<div class="col-md-5 menu-img">
+												<img src="images/f3.jpg" class="img-fluid rounded-circle" alt="">
+											</div>
+											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
+												<h5>冰淇淋球</h5>
+												<p class="sub-meta mt-2">
+
+													￥8元
+												</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//Menu-->
+
+	<!--/blog-->
+	<section class="blog_sec container-fluid">
+		<h3 class="tittle">最新日志</h3>
+		<div class="row inner-sec">
+			<div class="col-lg-6 banner-btm-left">
+				<div class="banner-btm-top">
+					<div class="banner-btm-inner a1 text-left">
+						<div class="blog_date">
+
+							<h4>2019.5.1</h4>
+
+						</div>
+						<h6>
+							<a href="single.html">蜂蜜千层蛋糕</a>
+						</h6>
+						<p class="paragraph">甜甜的蜂蜜，松软的蛋糕</p>
+
+						<a href="single.html" class="blog-btn" data-aos="fade-down">更多</a>
+					</div>
+					<div class="banner-btm-inner a2">
+
+					</div>
+				</div>
+				<div class="banner-btm-bottom">
+					<div class="banner-btm-inner a3">
+
+					</div>
+					<div class="banner-btm-inner a4 text-left">
+						<div class="blog_date">
+
+							<h4>2019.5.25</h4>
+
+						</div>
+						<h6>
+							<a href="single.html">酥面包条</a>
+						</h6>
+						<p class="paragraph">酥脆的面包夹着烘烤的气味</p>
+
+						<a href="single.html" class="blog-btn" data-aos="fade-down">更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 banner-btm-left">
+				<div class="banner-btm-top">
+					<div class="banner-btm-inner a1 text-left">
+						<div class="blog_date">
+
+							<h4>2019.5.28</h4>
+
+						</div>
+						<h6>
+							<a href="single.html">水果奶油蛋糕</a>
+						</h6>
+						<p class="paragraph">看得见的水果，细腻的奶油，糯糯的蛋糕</p>
+
+						<a href="single.html" class="blog-btn" data-aos="fade-down">更多</a>
+					</div>
+					<div class="banner-btm-inner a5">
+
+					</div>
+				</div>
+				<div class="banner-btm-bottom">
+					<div class="banner-btm-inner a6">
+
+					</div>
+					<div class="banner-btm-inner a4 text-left">
+						<div class="blog_date">
+
+							<h4>2019.6.1</h4>
+
+						</div>
+						<h6>
+							<a href="single.html">小猫饼干</a>
+						</h6>
+						<p class="paragraph">烤箱独特烘培而成，很好的下午茶甜点</p>
+
+						<a href="single.html" class="blog-btn" data-aos="fade-down">更多</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--//blog-->
+	<!--/Gallry-->
+	<section class="banner-bottom">
+		<div class="container">
+			<h3 class="tittle">店内特色</h3>
+			<div class="row inner-sec">
+
+				<div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
+					<div class="section_1_gallery_grid">
+						<a title="新鲜蜂蜜，看得见的食材" href="images/p1.jpg">
+							<div class="section_1_gallery_grid1">
+								<img src="images/p1.jpg" alt=" " class="img-fluid" />
+								<div class="proj_gallery_grid1_pos">
+									<h3>蜂蜜千层蛋糕</h3>
+									<p>了解更多</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col_md_4 proj_gallery_grid" data-aos="zoom-in">
+						<a title="新鲜看得见" href="images/p2.jpg">
+							<div class="section_1_gallery_grid1">
+								<img src="images/p2.jpg" alt=" " class="img-fluid" />
+								<div class="proj_gallery_grid1_pos">
+									<h3>酥面包条</h3>
+									<p>了解更多</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
+					<div class="section_1_gallery_grid">
+						<a title="新鲜看得见" href="images/p4.jpg">
+							<div class="section_1_gallery_grid1">
+								<img src="images/p4.jpg" alt=" " class="img-fluid" />
+								<div class="proj_gallery_grid1_pos">
+									<h3>小猫饼干</h3>
+									<p>了解更多</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="section_1_gallery_grid" data-aos="zoom-in">
+						<a title="新鲜看得见" href="images/p5.jpg">
+							<div class="section_1_gallery_grid1">
+								<img src="images/p5.jpg" alt=" " class="img-fluid" />
+								<div class="proj_gallery_grid1_pos">
+									<h3>坚果玫瑰酥</h3>
+									<p>了解更多</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+				<div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
+					<div class="section_1_gallery_grid">
+						<a title="新鲜看得见" href="images/p3.jpg">
+							<div class="section_1_gallery_grid1">
+								<img src="images/p3.jpg" alt=" " class="img-fluid" />
+								<div class="proj_gallery_grid1_pos">
+									<h3>水果奶油蛋糕</h3>
+									<p>了解更多</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="section_1_gallery_grid" data-aos="zoom-in">
+                        <a title="新鲜看得见" href="images/c2.jpg">
+							<div class="section_1_gallery_grid1">
+								<img src="images/c2.jpg" alt=" " class="img-fluid" />
+								<div class="proj_gallery_grid1_pos">
+									<h3>马卡龙</h3>
+									<p>了解更多</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//gallery-->
+	<!--reviews_sec-->
+	<section class="banner-bottom reviews_sec">
+		<div class="container">
+			<h3 class="tittle cen">美食家推荐</h3>
+			<div class="inner-sec">
+				<div class="flexslider mx-auto">
+					<ul class="slides">
+						<li>
+							<div class="row">
+								<div class="col-md-3 testimonials_grid-inn">
+
+									<img src="images/t1.jpg" alt=" " class="img-fluid" />
+								</div>
+								<div class="col-md-9 testimonials_grid text-left">
+									<h3>Greece
+										<span>美食家</span>
+									</h3>
+									<i>United States</i>
+									<p>口感细腻，食材新鲜。</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="col-md-3 testimonials_grid-inn">
+
+									<img src="images/t2.jpg" alt=" " class="img-fluid" />
+								</div>
+								<div class="col-md-9 testimonials_grid text-left">
+									<h3>Josephine Lee
+										<span>美食家</span>
+									</h3>
+									<i>United States</i>
+									<p>吃起来会很开心，很享受</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="col-md-3 testimonials_grid-inn">
+
+
+									<img src="images/t5.jpg" alt=" " class="img-fluid" />
+								</div>
+								<div class="col-md-9 testimonials_grid text-left">
+									<h3>Mark Olson
+										<span>美食家</span>
+									</h3>
+									<i>United States</i>
+									<p>食材充足，看得见的美味</p> 
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---->
+	<!--//inner-content-->
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 footer-grid text-left" data-aos="fade-right">
+					<h3>关于我们</h3>
+					<p>小店诚信经营，拒绝有害添加物，销售多种甜点、饮品，欢迎进店了解</p>
+					<div class="read">
+						<a href="single.html" class="btn btn-primary read-m">更多</a>
+					</div>
+				</div>
+				<!-- subscribe -->
+				<div class="col-lg-8 subscribe-main footer-grid text-left" data-aos="fade-left">
+					<h2>欢迎加入我们</h2>
+					<div class="subscribe-main text-left">
+						<div class="subscribe-form">
+							<form action="#" method="post" class="subscribe_form">
+								<input class="form-control" type="email" placeholder="Enter your email..." required>
+								<button type="submit" class="btn btn-primary submit">提交</button>
+							</form>
+
+						</div>
+						<p>版权所有，违者必究</p>
+					</div>
+					<!-- //subscribe -->
+					<div class="footer-cpy text-left">
+						<div class="copyrighttop">
+							<ul>
+								<li class="mx-lg-3 mx-md-2 mx-1">
+									<a class="facebook" href="#">
+										<i class="fab fa-facebook-f"></i>
+										<span>Facebook</span>
+									</a>
+								</li>
+								<li>
+									<a class="facebook" href="#">
+										<i class="fab fa-twitter"></i>
+										<span>Twitter</span>
+									</a>
+								</li>
+								<li class="mx-lg-3 mx-md-2 mx-1">
+									<a class="facebook" href="#">
+										<i class="fab fa-google-plus-g"></i>
+										<span>Google+</span>
+									</a>
+								</li>
+								<li>
+									<a class="facebook" href="#">
+										<i class="fab fa-pinterest-p"></i>
+										<span>Pinterest</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="copyrightbottom">
+							<p>公司地址：西安新技术产业开发区</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>
+	</footer>
+	<!---->
+
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- /flexisel -->
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 4,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 3
+					}
+				}
+			});
+
+		});
+	</script>
+	<script src="js/jquery.flexisel.js"></script>
+	<!-- //flexisel -->
+	<!-- flexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script>
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+
+	<!-- //flexSlider -->
+
+	<!-- simpleLightbox -->
+	<script src="js/simpleLightbox.js"></script>
+	<script>
+		$('.proj_gallery_grid a').simpleLightbox();
+	</script>
+	<!-- //simpleLightbox -->
+	<!-- /js files -->
+	<link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<link href='css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<script src='js/aos.js'></script>
+	<script src="js/aosindex.js"></script>
+	<script src="js/index.js"></script>
+	<!-- //js files -->
+	<!--/ start-smoth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+							 		};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#home" class="scroll" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+	<!-- //Custom-JavaScript-File-Links -->
+	<script src="js/bootstrap.js"></script>
+	<script>
+		document.getElementById('user').innerHTML = window.localStorage.getItem('user');
+    </script>
+	<script>
+		$.ajax({
+			url:"http://localhost:8080/popo_war_exploded/order",//这里是你接口的路径，记住http://不要忘记,localhost是你本地的地址，如果要请求别人的请将别人的ip地址替换，后面的addInfoPerson是接口名字。
+			type:"POST",//请求方式是get还是post,我这里用的是post
+			contentType:"application/json",
+			data:null,//传递的参数
+			dataType:"json",
+			success:function(data){ //成功返回的回调函数
+				var ul = document.getElementById('flexiselDemo1');
+				var images  =ul.getElementsByTagName('img');
+				console.log(data);
+				window.localStorage.setItem('tiandetail',JSON.stringify(data));
+				console.log(images);
+				for(let i = 0,length=images.length;i<length;i++){
+					let index = i%5;
+					images[i].src = data[index]["order_url"];
+					images[i].onclick = function(){
+						window.location.href = "detail.html?name="+index;
+					}
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.pojo.User">
+        <id column="user_id" jdbcType="INTEGER" property="user_id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="user_name"/>
+        <result column="user_password" jdbcType="VARCHAR" property="user_password"/>
+        <result column="user_email" jdbcType="VARCHAR" property="user_email"/>
+    </resultMap>
+    <select id="login" resultType="int">
+        SELECT COUNT(*) FROM user
+        WHERE user_name = #{user_name} AND user_password = #{user_password}
+    </select>
+    <insert id="register">
+        INSERT INTO user(user_name, user_password, user_email)
+        VALUES (#{user_name}, #{user_password}, #{user_email})
+    </insert>
+    <select id="forget" resultType="String">
+        SELECT user_email FROM user
+        WHERE user_name = #{user_name}
+    </select>
+    <update id="modify">
+        UPDATE user
+        SET user_password = #{user_password}
+        WHERE user_name = #{user_name}
+    </update>
+</mapper>

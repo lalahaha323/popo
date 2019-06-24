@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OrderMapper">
+    <select id="show_order" resultType="com.pojo.Order1">
+        SELECT order_name as order_name, order_number as order_number,
+        order_singleprice as order_singleprice,order_describe as order_describe,
+        order_url as order_url  FROM order1
+    </select>
+</mapper>

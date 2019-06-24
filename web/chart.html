@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>购物车</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+      <style type="text/css">
+      h1 {
+        text-align:center;
+      }
+      table {
+        margin:0 auto;
+        width:60%;
+        border:2px solid #aaa;
+        border-collapse:collapse;
+      }
+      table th, table td {
+        border:2px solid #aaa;
+        padding:5px;
+		background-color:#FFF;
+      }
+      th {
+        background-color:#FFF;
+      }
+      </style>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700" rel="stylesheet">
+	<style type="text/css">
+	body,td,th {
+	font-family: Roboto, sans-serif;
+}
+body {
+	background-color: #f3ce00;
+}
+    </style>
+</head>
+
+<body>
+	<!--/banner-->
+	<header>
+		<div class="top-bar_sub container-fluid">
+			<div class="row">
+                <div class="col-md-4 top-forms text-left mt-4"  data-aos="fade-up">
+					<span>欢迎回来</span>
+					<span class="mx-lg-4 mx-md-2  mx-1">
+						<a href="login.html">
+							<i class="fas fa-lock"></i>登录</a>
+					</span>
+					<span>
+						<a href="register.html">
+							<i class="far fa-user"></i>注册</a>
+					</span>
+                 </div>   
+				<div class="col-md-4 logo text-center" data-aos="fade-up">
+					<a class="navbar-brand" href="index.html">
+						<i class="fab fa-gitkraken"></i> 小恐龙甜品店</a>
+				</div>
+				<div class="col-md-4 log-icons text-right"  data-aos="fade-up">
+
+					<ul class="social_list1 mt-4">
+
+						<li>
+							<a href="chart.html" class="facebook1 mx-2">
+								<i class="fa fa-shopping-cart"></i>
+                                
+							</a>
+						</li>
+						<li>
+							<a href="#" class="twitter2">
+								<i class="far fa-star"></i>
+                                     
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!--/banner-->
+	<div class="banner-inner">
+	</div>
+	<!--//banner-->
+	<!--/nav-->
+	<div class="header_top" id="home">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">首页
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">积分活动</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll" href="#menu">菜单</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">小恐龙日志</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						    aria-expanded="false">
+							店内特色
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#"></a>
+							<a class="dropdown-item" href="gallery.html">饮品</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="tianpin.html">甜品</a>
+							<a class="dropdown-item" href="tiandian.html">甜点</a>
+
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">我是会员</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+	<!--//nav-->
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item">
+			<a href="index.html">首页</a>
+		</li>
+		<li class="breadcrumb-item active">购物车</li>
+	</ol>
+	<!--/main-->
+	<section class="banner-bottom cart">
+		<div class="container">
+            <h1>店内特色</h1>
+    <table>
+      <tr>
+        <th >商品</th>
+        <th>单价(元)</th>
+        <th>名称</th>
+        <th>好评率</th>
+        <th>购买</th>
+      </tr>   
+      <tr>
+        <td align="center"><img src="cake/优格提子.jpeg" width="173px" height="111px"></td>
+        <td>6</td>
+        <td>优格提子</td>
+        <td>98%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><img src="cake/瑞士卷.jpeg" width="173px" height="111px"></td>
+         <td>10</td>
+         <td>瑞士卷</td>
+        <td>96%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><img src="cake/芝士有味.jpeg" width="173px" height="111px"></td>
+        <td>7</td>
+        <td>芝士有味</td>
+        <td>99%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><img src="cake/蓝莓提拉米苏.jpg" width="173px" height="111px"></td>
+        <td>15</td>
+        <td>蓝莓提拉米苏</td>
+        <td>95%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><img src="drink/xitea/低脂红玉.jpg" width="173px" height="111px"></td>
+       <td>20</td>
+       <td>低脂红玉</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+       <tr>
+        <td align="center"><img src="drink/xitea/芝士红颜小蓝莓.jpg" width="173px" height="111px"></td>
+        <td>8</td>
+        <td>芝士红颜小蓝莓</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+       <tr>
+        <td align="center"><img src="drink/simpledrink/华田波波冰.jpg" width="173px" height="111px"></td>
+        <td>20</td>
+        <td>华田波波冰</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+       <tr>
+        <td align="center"><img src="drink/simpledrink/粒粒鲜橙.jpg" width="173px" height="111px"></td>
+        <td>10</td>
+        <td>粒粒鲜橙</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+       <tr>
+        <td align="center"><img src="bread/千丝红豆.jpeg" width="173px" height="111px"></td>
+        <td>9</td>
+        <td>千丝红豆</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+       <tr>
+        <td align="center"><img src="bread/招牌起司.jpeg" width="173px" height="111px"></td>
+        <td>16</td>
+        <td>招牌起司</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+       <tr>
+        <td align="center"><img src="bread/法式焦糖酥.jpg" width="173px" height="111px"></td>
+        <td>25</td>
+        <td>法式焦糖酥</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr>
+       <tr>
+        <td align="center"><img src="bread/红豆燕麦松饼.jpg" width="173px" height="111px"></td>
+        <td>18</td>
+        <td>红豆燕麦松饼</td>
+        <td>100%</td>
+        <td align="center">
+          <input type="button" value="加入购物车" onclick="add_shoppingcart(this);"/>
+        </td>
+      </tr> 
+    </table>
+  
+	<h1>购物车</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>商品</th>
+          <th>单价(元)</th>
+          <th>数量</th>
+          <th>金额(元)</th>
+          <th>删除</th>
+        </tr>
+      </thead>
+      <tbody id="goods">
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" align="center">结算</td>
+          <td id="total"></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>    
+		</div>
+	</section>
+	<!--//main-->
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 footer-grid text-left" data-aos="fade-right" >
+					<h3>关于我们</h3>
+					<p>小店诚信经营，拒绝有害添加物，销售多种甜点、饮品，欢迎进店了解</p>
+					<div class="read">
+						<a href="single.html" class="btn btn-primary read-m">更多</a>
+					</div>
+				</div>
+				<!-- subscribe -->
+				<div class="col-lg-8 subscribe-main footer-grid text-left" data-aos="fade-left">
+					<h2>欢迎加入我们</h2>
+					<div class="subscribe-main text-left">
+						<div class="subscribe-form">
+							<form action="#" method="post" class="subscribe_form">
+								<input class="form-control" type="email" placeholder="Enter your email..." required>
+								<button type="submit" class="btn btn-primary submit">提交</button>
+							</form>
+
+						</div>
+						<p>版权所有，违者必究</p>
+					</div>
+					<!-- //subscribe -->
+					<div class="footer-cpy text-left">
+						<div class="copyrighttop">
+							<ul>
+								<li class="mx-lg-3 mx-md-2 mx-1">
+									<a class="facebook" href="#">
+										<i class="fab fa-facebook-f"></i>
+										<span>Facebook</span>
+									</a>
+								</li>
+								<li>
+									<a class="facebook" href="#">
+										<i class="fab fa-twitter"></i>
+										<span>Twitter</span>
+									</a>
+								</li>
+								<li class="mx-lg-3 mx-md-2 mx-1">
+									<a class="facebook" href="#">
+										<i class="fab fa-google-plus-g"></i>
+										<span>Google+</span>
+									</a>
+								</li>
+								<li>
+									<a class="facebook" href="#">
+										<i class="fab fa-pinterest-p"></i>
+										<span>Pinterest</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="copyrightbottom">
+							<p>公司地址：西安新技术产业开发区</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>
+	</footer>
+	<!---->
+
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- /flexisel -->
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 4,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 3
+					}
+				}
+			});
+
+		});
+	</script>
+	<script src="js/jquery.flexisel.js"></script>
+	<!-- //flexisel -->
+	<!-- flexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script>
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+
+	<!-- //flexSlider -->
+
+	<!-- simpleLightbox -->
+	<script src="js/simpleLightbox.js"></script>
+	<script>
+		$('.proj_gallery_grid a').simpleLightbox();
+	</script>
+	<!-- //simpleLightbox -->
+	<!-- /js files -->
+	<link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<link href='css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<script src='js/aos.js'></script>
+	<script src="js/aosindex.js"></script>
+	<!-- //js files -->
+	<!--/ start-smoth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+							 		};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#home" class="scroll" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+	<!-- //Custom-JavaScript-File-Links -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/chart.js"></script>
+
+
+</body>
+
+</html>

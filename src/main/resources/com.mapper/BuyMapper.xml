@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.BuyMapper">
+    <insert id="addCar" parameterType="com.pojo.Buy">
+        INSERT INTO buycard (buyuser_name, buycard_name, buycard_price,buycard_singleprice, buycard_number, buycard_state)
+        VALUES(#{buyuser_name}, #{buycard_name}, #{buycard_price},  #{buycard_singleprice},#{buycard_number}, #{buycard_state})
+    </insert>
+    <select id="selectPrice" resultType="java.math.BigDecimal">
+        SELECT bread_price FROM bread
+        WHERE bread_name = #{buycard_name}
+    </select>
+</mapper>

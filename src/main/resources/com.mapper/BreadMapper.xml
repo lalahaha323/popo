@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.BreadMapper">
+    <select id="showBread" resultType="com.pojo.Bread">
+        SELECT bread_name as bread_name, bread_level as bread_level, bread_describe as bread_describe,
+        bread_price as bread_price, bread_number as bread_number, bread_image as bread_image FROM bread
+    </select>
+</mapper>
